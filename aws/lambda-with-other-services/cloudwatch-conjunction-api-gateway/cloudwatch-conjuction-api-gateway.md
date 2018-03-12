@@ -51,7 +51,7 @@ Events are similar in nature to Alarms. But instead of sending out notifications
 
 Next, on the left hand side, choose whether you want the rule to be on a time basis or an event basis and set up the corrisponding settings. On the right hand side, select the resource you wish to target with the rule.
 
-![alt text](images/create-event.PNG)
+![alt text](images/create-rule.PNG)
 
 A common example of a rule would be calling a lambda function that would automatically update a DynamoDB table with new information on a schedules basis, perhaps once a day at 3 A.M.
 
