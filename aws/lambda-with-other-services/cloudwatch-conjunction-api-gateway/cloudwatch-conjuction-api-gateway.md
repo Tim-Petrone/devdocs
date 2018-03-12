@@ -1,6 +1,6 @@
-# Using Cloudwatch in Conjunction with API Gateway
+# Using CloudWatch in Conjunction with API Gateway
 
-The Amazon Web Services (AWS) resource Cloudwatch is a one-stop shop for monitoring all the other AWS resources you might be utalizing. In the left hand menu in the Cloudwatch console, you can see the different features Cloudwatch comes equiped with. (Dashboards, Alarms, Events, Logs, and Metrics)
+The Amazon Web Services (AWS) resource CloudWatch is a one-stop shop for monitoring all the other AWS resources you might be utalizing. In the left hand menu in the CloudWatch console, you can see the different features CloudWatch comes equiped with. (Dashboards, Alarms, Events, Logs, and Metrics)
 
 ![alt text](images/left-hand-menu.PNG)
 
@@ -20,7 +20,7 @@ Go through the steps as you are prompted to set up the metrics. It is extremely 
 
 ## Alarms
 
-Another helpful feature of Cloudwatch is the Alarms section. In this section, you can set Cloudwatch to alert you when certain events occur.
+Another helpful feature of CloudWatch is the Alarms section. In this section, you can set CloudWatch to alert you when certain events occur.
 
 Some examples include:
 * when certain phrases appear in the logs
@@ -59,9 +59,9 @@ A common example of a rule would be calling a lambda function that would automat
 
 ## Logs
 
-One of the most useful features on Cloudwatch is the Logs feature. This creates a record of all the events and outputs of a Lambda function from the time the function gets called to the time the function finishes or exits. In these logs you can see certain pieces of data that you have console logged in your code. This is also the place where you can see any errors that have arisen. This is especially important for backend development when the programmers are using an API in the API Gateway that is calling a Lambda function. This is essentially the console for backend developers where they can follow the flow of the function and see if and where any problems occur.
+One of the most useful features on CloudWatch is the Logs feature. This creates a record of all the events and outputs of a Lambda function from the time the function gets called to the time the function finishes or exits. In these logs you can see certain pieces of data that you have console logged in your code. This is also the place where you can see any errors that have arisen. This is especially important for backend development when the programmers are using an API in the API Gateway that is calling a Lambda function. This is essentially the console for backend developers where they can follow the flow of the function and see if and where any problems occur.
 
-To see specific logs, click on the 'Logs' section in the left hand menu. Make sure you are in the correct AWS region. This will bring up a screen with a list of all the log groups which contian the names of the lambda functions that have had activity for that region. Find the log group you wish to view and click on that link. This will bring you to another screen with a list of log streams. Cloudwatch will create a new log stream every time the lambda function gets updated. Cloudwatch will then log all of the activities of the function under this one stream even when the function gets called multiple times until a new log stream is created. The most recent log stream will be the first one listed by default.
+To see specific logs, click on the 'Logs' section in the left hand menu. Make sure you are in the correct AWS region. This will bring up a screen with a list of all the log groups which contian the names of the lambda functions that have had activity for that region. Find the log group you wish to view and click on that link. This will bring you to another screen with a list of log streams. CloudWatch will create a new log stream every time the lambda function gets updated. CloudWatch will then log all of the activities of the function under this one stream even when the function gets called multiple times until a new log stream is created. The most recent log stream will be the first one listed by default.
 
 ![alt text](images/log-stream.PNG)
 
